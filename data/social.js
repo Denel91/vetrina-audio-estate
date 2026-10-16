@@ -1,7 +1,7 @@
 export const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/Denel91",
+    href: "https://github.com/Denel91/vetrina-audio-estate",
     label: "Apri il profilo GitHub di Daniele Di Salvo",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
@@ -13,5 +13,14 @@ export const socialLinks = [
       </svg>
     ),
   },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/daniele-di-salvo/?isSelfProfile=true",
+    label: "Apri LinkedIn",
+    icon: (props) => (
+      <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+        <path d="M5.164 3.5a2.164 2.164 0 1 1-4.328 0 2.164 2.164 0 0 1 4.328 0ZM.99 8.004h4.348V22H.99V8.004Zm6.957 0h4.174v1.912h.06c.581-1.1 2.001-2.26 4.12-2.26 4.405 0 5.22 2.9 5.22 6.672V22h-4.348v-6.803c0-1.623-.03-3.71-2.26-3.71-2.263 0-2.609 1.767-2.609 3.594V22H7.947V8.004Z" />
+      </svg>
+    ),
+  },
 ];
-

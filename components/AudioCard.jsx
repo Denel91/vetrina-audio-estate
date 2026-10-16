@@ -1,4 +1,5 @@
 import QRCode from "qrcode";
+import StoryPlayer from "./StoryPlayer";
 
 const COLORI = ["#FFC233", "#5ED1C6", "#FF8FA3", "#B7A8FF"];
 
@@ -31,6 +32,7 @@ export default async function AudioCard({ indice, nome, oggetto, titolo, link })
   const id = idDaLink(link);
   // Link accorciato alla forma standard: il QR code resta più semplice da inquadrare.
   const url = id ? `https://drive.google.com/file/d/${id}/view` : link;
+  const audioUrl = id ? `/api/audio/${id}` : link;
   const qr = url ? await creaQr(url) : null;
 
   return (
@@ -49,6 +51,13 @@ export default async function AudioCard({ indice, nome, oggetto, titolo, link })
 
         {qr ? (
           <>
+            <StoryPlayer
+              nome={nome}
+              oggetto={oggetto}
+              titolo={titolo}
+              audioUrl={audioUrl}
+              accent={coloreDi(indice)}
+            />
             <a
               className="qr"
               href={url}

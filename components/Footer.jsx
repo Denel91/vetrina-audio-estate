@@ -13,7 +13,7 @@ export default function Footer({ audioLength }) {
         </span>
 
         <p>
-          {audioLength} storie raccontate dai bambini della classe © <span>Daniele Di Salvo</span>
+          {audioLength} storie raccontate dai bambini della classe © 2026 <span>Daniele Di Salvo</span>
         </p>
       </div>
 
