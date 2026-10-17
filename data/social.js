@@ -23,4 +23,24 @@ export const socialLinks = [
       </svg>
     ),
   },
+  {
+    name: "Vercel",
+    href: "https://vercel.com",
+    label: "Apri Vercel",
+    icon: (props) => (
+      <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+        <path d="M12 2 2 19h20L12 2Z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Next.js",
+    href: "https://nextjs.org",
+    label: "Apri Next.js",
+    icon: (props) => (
+      <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+        <path d="M12 2.75c-5.1 0-9.25 4.15-9.25 9.25S6.9 21.25 12 21.25 21.25 17.1 21.25 12 17.1 2.75 12 2.75Zm0 1.5a7.75 7.75 0 0 1 5.94 13.14L9.42 7.25h-1.4v9.5h1.5v-6.22l8.51 10.1A7.75 7.75 0 0 1 12 4.25Zm-3.5 1.5h1.5v9.5h-1.5v-9.5Z" />
+      </svg>
+    ),
+  },
 ];
