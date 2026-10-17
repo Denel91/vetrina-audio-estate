@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import { Bricolage_Grotesque, Nunito } from "next/font/google";
 import "./globals.css";
 
@@ -48,7 +49,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="it" className={`${display.variable} ${corpo.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
